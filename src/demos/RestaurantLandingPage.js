@@ -25,7 +25,7 @@ export default () => {
     <AnimationRevealPage>
       <Hero
         heading={<>Delicious & Affordable <HighlightedText>Meals Near You.</HighlightedText></>}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description="Trin-Foodie is a website dedicated to showcasing delicious and affordable meals in various restaurants located near you. Discover new and exciting dining options in your area, read reviews from fellow foodies, and find the perfect spot for your next meal."
         imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
         imageCss={imageCss}
         imageDecoratorBlob={true}
@@ -42,11 +42,10 @@ export default () => {
         }
         description={
           <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            Discover our affordable menu featuring delicious food options that we've been serving for over 5 years. Our restaurant is dedicated to growing and providing the best dining experience for our customers.
             <br />
             <br />
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Our restaurant has been serving affordable and delicious food for over 5 years. From our humble beginnings, we have grown to become a favorite among locals and visitors alike. Come and taste our mouth-watering dishes today!
           </Description>
         }
         buttonRounded={false}
@@ -57,7 +56,7 @@ export default () => {
         }
         imageCss={imageCss}
         imageDecoratorBlob={true}
-        imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
+        imageDecoratorBlobCss={tw`-translate-x-1/2 opacity-25 left-1/2 md:w-32 md:h-32`}
       />
       {/* TabGrid Component also accepts a tabs prop to customize the tabs and its content directly. Please open the TabGrid component file to see the structure of the tabs props.*/}
       <TabGrid
@@ -119,19 +118,19 @@ export default () => {
         imageInsideDiv={false}
         imageSrc="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEzNzI2fQ&auto=format&fit=crop&w=768&q=80"
         imageCss={Object.assign(tw`bg-cover`, imageCss)}
-        imageContainerCss={tw`md:w-1/2 h-auto`}
+        imageContainerCss={tw`h-auto md:w-1/2`}
         imageDecoratorBlob={true}
-        imageDecoratorBlobCss={tw`left-1/2 md:w-32 md:h-32 -translate-x-1/2 opacity-25`}
+        imageDecoratorBlobCss={tw`-translate-x-1/2 opacity-25 left-1/2 md:w-32 md:h-32`}
         textOnLeft={true}
       />
       <Testimonial
         subheading=""
         heading={<>Customers <HighlightedText>Love Us.</HighlightedText></>}
       />
-      <DownloadApp
-        text={<>People around you are ordering delicious meals using the <HighlightedTextInverse>Treact App.</HighlightedTextInverse></>}
+      {/* <DownloadApp
+        text={<>People around you are ordering delicious meals using the <HighlightedTextInverse>FooDie App.</HighlightedTextInverse></>}
       />
-      <Footer />
+      <Footer /> */}
     </AnimationRevealPage>
   );
 }
